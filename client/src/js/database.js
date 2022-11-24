@@ -40,7 +40,7 @@ const initdb = async () =>
     const request = store.get(1);
       // Get confirmation of the request.
     const result = await request;
-
+    console.log(result);
     return result?.value;
   };
 initdb();
