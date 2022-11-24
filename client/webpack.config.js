@@ -26,16 +26,16 @@ module.exports = () => {
         template: './index.html',
         title: 'JATE'
       }),
-
+        //service working
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
-      // manifest.json
+      // manifest
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'text-editor',
+        name: 'another-text-editor',
         short_name: 'JATE',
         description: 'Just Another Text Editor!',
         background_color: '#225ca3',
